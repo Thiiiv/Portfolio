@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="../styles/portfolio.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <style>
+            .page1 a, .CV{
+                height: 80vh;
+                width: 50vh;
+                right: 0;
+                left: 0;
+                margin: auto;
+            }
+            .page1 a::before {
+                content: "🢗";
+                display: block;
+                margin-bottom: 1vh;
+                font-size: 5vh;
+                color: white;
+                text-align: center;
+                animation: bounce-bottom 1.5s ease infinite alternate both;
+            }
+        </style>
+    </head> 
+    <body>
+        <div class="fond">
+            <video autoplay muted loop id="video1">
+                <source src="../videos/video3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <section class="accueil">
+            <header>
+                <div class="menu">
+                    <p class="Nom"><img src="../images/profil.png" width="20px" class="profil">JEYASEELAN Thivakar</p>
+                    <div class="pages">
+                        <button class="lien"><a href="../../index.html">Accueil</a></button>
+                        <button class="lien"><a href="cv.html">CV</a></button>
+                        <button class="lien"><a href="motivations.html">Motivations</a></button>
+                        <button class="lien"><a href="contact.html">Contact</a></button>
+                    </div>
+                </div>
+            </header>
+            <h1>Mon CV</h1>
+        </section>
+        <section class="page1">
+                <a href="../images/CV_JEYASEELAN_Thivakar.pdf" class="lien-cv">
+                <img src="../images/CV2.jpg" alt="Mon CV" class="CV">
+                </a>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>
