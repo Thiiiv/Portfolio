@@ -14,15 +14,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="fond">
+        <div class="fond"> 
             <video autoplay muted loop id="video1">
-                <source src="data/videos/video.mp4" type="video/mp4">
+                <source src="data/videos/video13.mp4" type="video/mp4">
             </video>
         </div>
         <section class="accueil">
             <header>
                 <div class="menu">
-                    <p class="Nom"><img src="data/images/profil.png" width="20px" class="profil">JEYASEELAN Thivakar</p>
+                    <div class="profil-menu">
+                        <img src="data/images/profil.png" width="20px" class="profil">
+                        <p class="Nom">JEYASEELAN Thivakar</p>
+                    </div>
                     <div class="pages">
                         <button class="lien"><a href="index.html">Accueil</a></button>
                         <button class="lien"><a href="data/pages/cv.html">CV</a></button>
@@ -31,16 +34,18 @@
                     </div>
                 </div>
             </header>
-            <h1>Bienvenue sur mon portfolio</h1>
+            <a href="#page1">
+                <h1>Bienvenue sur mon portfolio</h1>
+            </a>
         </section>
-        <section class="page1">
-            <p class="home-text">
-                <span class="p-titre"> Projets : </span><br><br>
-                <a href="data/videos/Film_Projet_Robot_SIN.mp4" class="video-projet">Robot sanitaire</a><br><br>
-                Potager connecté <br><br>
-                Eolienne verticale <br><br>
-                Course en Cours <br><br>
-            </p>
+        <section class="page1" id="page1">
+            <span class="p-titre">Projets</span>
+            <div class="projets">
+                <a href="data/videos/Film_Projet_Robot_SIN.mp4" class="video-projet">Robot sanitaire</a>
+                <a href="#">Potager connecté</a>
+                <a href="#">Eolienne verticale</a>
+                <a href="#">Course en Cours</a>
+            </div>
         </section>
         <footer>
 

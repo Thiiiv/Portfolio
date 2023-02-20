@@ -16,13 +16,13 @@ et une scroll-behavior pour changer le comportement du scroll, qui est là régl
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    cursor: url('../images/curseur.png') 2 2, auto;
+    /*cursor: url('../images/cursor5.png') 2 2, auto;*/
 }
 /*
 Corps de la page
 */
 body {
-  cursor: url('../images/curseur.png') 2 2, auto; /* changer le curseur par un curseur personnalisé */
+  /*cursor: url('../images/cursor5.png') 2 2, auto;*/ /* changer le curseur par un curseur personnalisé */
 }
 /*
 Corps de la page
@@ -89,20 +89,36 @@ Le contenu est organisé sur la même ligne
   width: 100%;
   height: 8vh;
   flex-direction: row;
-  justify-content: center;
-  background-color: black;
-  color: azure;
+  background-color: transparent;
+  justify-content: space-between;
   list-style-type: none;
   font-family: 'Manrope', sans-serif;
-  border-bottom: 5px solid;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  cursor: url('../images/curseur.png') 2 2, auto;
-  animation: color-change 1s linear infinite alternate both;
+  /*cursor: url('../images/cursor5.png') 2 2, auto;*/
   position: fixed;
 }
-.menu .Nom {
-  flex-grow: 2;
+.menu .profil-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  width: 20vw;
+  font-size: 1.5em;
+  background-color: black;
+  border: 1vh solid black;
+  border-bottom-right-radius: 20px;
+}
+.menu .profil-menu p {
+  margin-left: 1vw;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.menu .profil-menu img {
+  width: 3vw;
+  height: auto;
+  margin-right: 1vw;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -114,13 +130,16 @@ Barre de navigation qui se situe tout en haut de la première partie de la page
   top: 0;
   bottom: 0;
   margin: auto;
-  justify-content: space-between;
+  margin-right: 0;
+  background-color: black;
+  border: 2vh solid black;
+  border-bottom-left-radius: 20px;
 }
 .menu .pages a {
-    flex-grow: 1;
-    text-align: center;
-    margin-left: 2vw;
-    margin-right: 2vw;
+  text-align: center;
+  font-size: 1.5em;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 /*
@@ -129,13 +148,13 @@ Les liens/textes de la barre de navigation
 .menu a {
     text-decoration: none;
     color: white;
-    cursor: url('../images/curseur.png') 2 2, auto;
+    /*cursor: url('../images/cursor5.png') 2 2, auto;*/
 }
 /*
 Les liens/textes de la barre de navigation quand le curseur est dessus
 */
 .menu a:hover {
-  cursor: url('../images/curseur.png') 2 2, auto;
+  /*cursor: url('../images/cursor5.png') 2 2, auto;*/
 }
 /*
 style des boutons de la barre de navigation
@@ -145,14 +164,21 @@ style des boutons de la barre de navigation
     border: none;
     background-color: transparent;
     font-family: 'Poppins', sans-serif;
-    margin: 1vh 1vh;
+    padding: 1vh 1vh;
 }
 /*
 style des boutons de la barre de navigation lorsque le curseur est dessus
 */
-.menu .lien:hover {
-  animation: pulsate 0.5s ease-in-out infinite both;
-  cursor: url('../images/curseur.png') 2 2, auto;
+.menu .pages .lien:hover {
+  animation: pulsate 1s ease-in-out infinite both;
+}
+.menu .pages .lien:hover a {
+  color: black;
+  /*cursor: url('../images/cursor5.png') 2 2, auto;*/
+}
+.pages > .lien:hover {
+  background-color: white;
+  border-radius: 20px;
 }
 /*
 style de la 2ème partie de la page
@@ -171,6 +197,10 @@ le code est plutôt similaire à la première partie de la page
   left: 0;
   margin: auto;
   position: absolute;
+}
+.page1 .home-text {
+  font-size: 2em;
+  text-align: center;
 }
 /*
 les vidéos en fond
@@ -198,7 +228,9 @@ h1 {
     text-align: center;
     margin-top: 50vh;
     transform: translateY(-45%);
-    animation: black-white 1.5s linear infinite alternate both;
+    animation: shadow-drop-center 0.4s alternate infinite both;
+    color: black;
+    cursor: default;
 }
 /*
 Ajout d'élément après le titre de la 1ère partie de la page
@@ -209,6 +241,15 @@ h1::after {
     display: block;
     font-size: 100%;
     animation: bounce-bottom 1.5s ease infinite alternate both;
+    border: 2vh solid white;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    cursor: pointer;
 }
 /*
 Style concernant un div se trouvant sur la page motivations.html
@@ -251,32 +292,34 @@ texte de la page home.html
 
 c'est un peu près le même code que pour les balises p précèdents
 */
-.menu .profil {
-  margin-left: 2vw;
-  margin-right: 2vw;
-}
+
 /*
 span de class .p-titre se trouvant dans la balise p de la page home.html
 */
-.page1 .home-text .p-titre {
-  font-size: 4vw;
+.page1 .p-titre {
+  font-size: 5em;
   font-weight: bolder;
+}
+.page1 .projets {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+  text-align: center;
 }
 /*
 Style du lien vers la vidéo du projet se trouvant dans la 2ème partie de la page home.html
 */
-.page1 .video-projet {
+.page1 .projets a {
   color: black;
+  font-size: 2em;
+  margin-bottom: 3vh;
+}
+.page1 {
+  background-color: hsla(173, 100%, 92%, 0.733);
 }
 /*
 Ajout d'élément avant la vidéo se trouvant sur la 2ème partie de la page home.html
 */
-.page1 .video-projet::before {
-  content: "🢗";
-  display: block;
-  font-size: 100%;
-  animation: bounce-bottom 1.5s ease infinite alternate both;
-}
 
 .menu .Nom {
   font-weight: bolder;
@@ -286,41 +329,13 @@ Ajout d'élément avant la vidéo se trouvant sur la 2ème partie de la page hom
 Animation de rebondissement
 */
 @keyframes bounce-bottom {
-    0% {
+    from {
       transform: translateY(20px);
       animation-timing-function: ease-in;
-      opacity: 1;
     }
-    24% {
-      opacity: 1;
-    }
-    40% {
-      transform: translateY(16px);
-      animation-timing-function: ease-in;
-    }
-    65% {
-      transform: translateY(10px);
-      animation-timing-function: ease-in;
-    }
-    82% {
-      transform: translateY(6px);
-      animation-timing-function: ease-in;
-    }
-    93% {
-      transform: translateY(4px);
-      animation-timing-function: ease-in;
-    }
-    25%,
-    55%,
-    75%,
-    87% {
+    to {
       transform: translateY(0px);
       animation-timing-function: ease-out;
-    }
-    100% {
-      transform: translateY(0px);
-      animation-timing-function: ease-out;
-      opacity: 1;
     }
 }
 /*
@@ -348,7 +363,7 @@ Animatopns de changement de couleur. Passage de noir à blanc
 */
 @keyframes black-white {
   from {color: black;}
-  to {color: white;}
+  to {color: #858585;}
 }
 /*
 Animations de l'ombre d'un élément
@@ -376,6 +391,8 @@ qui est utilisé lorsqu'on passe le curseur sur les liens se trouvant dans la ba
     transform: scale(1);
   }
 }
+
+
 
 /*
 Partie responsive
