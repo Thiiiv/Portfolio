@@ -16,6 +16,7 @@ et une scroll-behavior pour changer le comportement du scroll, qui est là régl
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    color: black;
     /*cursor: url('../images/cursor5.png') 2 2, auto;*/
 }
 /*
@@ -68,6 +69,20 @@ le contenu est organisé en colonne
   z-index: -100;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.all-div {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.all-div::content {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 /*
 Première partie de la page
@@ -76,6 +91,7 @@ hauteur réglé sur la taille de la fenêtre
 */
 .accueil {
   height: 100vh;
+  width: 100%;
 }
 /*
 Barre de navigation qui se situe tout en haut de la première partie de la page
@@ -186,43 +202,44 @@ style de la 2ème partie de la page
 le code est plutôt similaire à la première partie de la page
 */
 .page1 {
-  top : 100vh;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   justify-content: center;
   align-items: center;
   right: 0;
   left: 0;
   margin: auto;
-  position: absolute;
+  margin-top: 0;
+  border: 0.1vh solid black;
 }
-.page1 .home-text {
-  font-size: 2em;
-  text-align: center;
+#intro {
+  background-color: hsla(165, 100%, 90%, 0.733);
 }
 /*
-les vidéos en fond
+les vidéos en fond 
 
 leur taille est ajusté en fonction de la taille de la fenêtre avec height à 100vh et width à 100vw
 les vidéos ont été étirés horizontalement pour remplir la largeur de la page avec transform: scaleX
 leur opacité est réduit de 20%
 */
-#video1{
-    height: 100vh;
-    transform: scaleX(1.3);
+#background-video {
+    min-height: 100vh;
+    min-width: 100%;
+    width: auto;
+    height: auto;
     left: 0;
     top: 0;
-    z-index: -1;
-    overflow: hidden;
+    z-index: -10;
     opacity: 0.80;
     position: fixed;
+    overflow: hidden;
 }
 /*
 Titre en gros se trouvant sur la 1ère partie de la page
 */
-h1 {
+.accueil h1 {
   font-family: 'Manrope', sans-serif;
     font-size: 8vw;
     text-align: center;
@@ -236,14 +253,14 @@ h1 {
 Ajout d'élément après le titre de la 1ère partie de la page
 Il s'agit de la petit flèche qui est animé
 */
-h1::after {
+.accueil h1::after {
     content: "🢗";
     display: block;
     font-size: 100%;
     animation: bounce-bottom 1.5s ease infinite alternate both;
-    border: 2vh solid white;
-    width: 125px;
-    height: 125px;
+    border: 1vh solid white;
+    width: 6vw;
+    height: 6vw;
     border-radius: 100%;
     left: 0;
     right: 0;
@@ -297,14 +314,20 @@ c'est un peu près le même code que pour les balises p précèdents
 span de class .p-titre se trouvant dans la balise p de la page home.html
 */
 .page1 .p-titre {
+  color: black;
+  font-weight: bold;
   font-size: 5em;
-  font-weight: bolder;
+	display: block;
+	position: relative;
+	padding: 0.2em 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 .page1 .projets {
   display: flex;
   flex-direction: column;
   margin-top: 3vh;
   text-align: center;
+  font-family: 'Manrope', sans-serif;
 }
 /*
 Style du lien vers la vidéo du projet se trouvant dans la 2ème partie de la page home.html
@@ -313,9 +336,13 @@ Style du lien vers la vidéo du projet se trouvant dans la 2ème partie de la pa
   color: black;
   font-size: 2em;
   margin-bottom: 3vh;
+  display: block;
+	position: relative;
+	padding: 0.2em 0;
 }
 .page1 {
   background-color: hsla(173, 100%, 92%, 0.733);
+  width: 100%;
 }
 /*
 Ajout d'élément avant la vidéo se trouvant sur la 2ème partie de la page home.html
@@ -324,7 +351,88 @@ Ajout d'élément avant la vidéo se trouvant sur la 2ème partie de la page hom
 .menu .Nom {
   font-weight: bolder;
   margin-right: 10vw;
+  color: white;
 }
+
+
+.page1 .p-titre::after {
+	content: '';
+  position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.15em;
+	background-color: white;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+
+/* Slide in */
+.page1 .p-titre {
+	overflow: hidden;
+}
+
+.page1 .p-titre::after {
+	opacity: 1;
+	transform: translate3d(-100%, 0, 0);
+}
+
+.page1 .p-titre:hover::after,
+.page1 .p-titre:focus::after{
+	transform: translate3d(0, 0, 0);
+}
+
+/* Fade in */
+.page1 .projets a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.2em;
+	background-color: black;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.page1 .projets a:hover::after,
+.page1 .projets a:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.2em, 0);
+}
+.page1 .projets .projet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: min-content;
+}
+.page1 .projets img {
+  display: none;
+}
+.page1 .projets .robot:hover + #robot-img {
+  display: block;
+}
+.page1 .projets .potager:hover + #potager-img {
+  display: block;
+}
+.page1 .projets .eolienne:hover + #eolienne-img {
+  display: block;
+}
+.page1 .projets .course:hover + #course-img {
+  display: block;
+}
+.page1 .projets a:hover + img {
+  width: 50vh;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-right: 8vw;
+  right: 0;
+}
+
 /*
 Animation de rebondissement
 */
@@ -397,12 +505,12 @@ qui est utilisé lorsqu'on passe le curseur sur les liens se trouvant dans la ba
 /*
 Partie responsive
 */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   /*
   Les vidéos en fond de la page
   On passe sur une taille fixe pour la hauteur, tandis que la largeur est sur auto
   */
-  #video1, #video2 {
+  #background-video {
     overflow: hidden;
     height: 100vh;
     width: auto;
