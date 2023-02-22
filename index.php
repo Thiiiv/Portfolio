@@ -32,6 +32,16 @@
         </section>
         <section class="page1" id="intro">
             <h1>Introduction</h1>
+            <div class="presentation">
+                <div class="present-text">
+                <p>Je suis JEYASEELAN Thivakar, un étudiant
+                    en 1ère année de BUT Informatique à l'IUT de Marne-La-Vallée.
+                </p>
+                </div>
+                <div class="photo-profil">
+                    <img src="data/images/profil.png" alt="Photo de profil" id="img-profil" />
+                </div>
+            </div>
         </section>
         <section class="page1" id="projets">
             <a href="data/pages/projets.php" class="p-titre">Projets</a>
@@ -52,7 +62,7 @@
                     <a href="data/pages/projets.php#potager" class="potager">Potager connecté</a>
                     <img src="data/images/potager.png" alt="Potager" id="potager-img"/>
                 </div>
-            </div>
+            </div> 
         </section>
         </div>
         <footer>

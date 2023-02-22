@@ -79,7 +79,7 @@ le contenu est organisé en colonne
   left: 0;
   overflow: hidden;
 }
-.all-div::content {
+.all-div section {
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -89,10 +89,6 @@ Première partie de la page
 
 hauteur réglé sur la taille de la fenêtre
 */
-.accueil {
-  height: 100vh;
-  width: 100%;
-}
 /*
 Barre de navigation qui se situe tout en haut de la première partie de la page
 
@@ -202,20 +198,56 @@ style de la 2ème partie de la page
 le code est plutôt similaire à la première partie de la page
 */
 .page1 {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  height: 100vh;
+  border: 0.1vh solid black;
+}
+#projets {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: flex;
   right: 0;
   left: 0;
   margin: auto;
-  margin-top: 0;
-  border: 0.1vh solid black;
 }
 #intro {
-  background-color: hsla(165, 100%, 90%, 0.733);
+  background-color: hsla(166, 100%, 94%, 0.733);
+  flex-direction: row;
+}
+#intro h1 {
+  width: 50vw;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 12vh;
+  top: 0;
+  font-size: 4em;
+  font-family: 'Poppins', sans-serif;
+  border: 0.5vh solid black;
+  border-radius: 25px;
+}
+#intro .presentation {
+  display: flex;
+  flex-direction: row;
+  margin: 5vh 2vw;
+  justify-content: space-between;
+}
+#intro .presentation .present-text, #intro .presentation .photo-profil {
+  border: 0.5vh solid black;
+  border-radius: 25px;
+}
+#intro .presentation .present-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+}
+#intro .present-text p {
+  font-size: 1.5em;
+  font-family: 'Manrope', sans-serif;
+  padding: 1vh 1vw;
 }
 /*
 les vidéos en fond 
@@ -375,7 +407,7 @@ Ajout d'élément avant la vidéo se trouvant sur la 2ème partie de la page hom
 
 .page1 .p-titre::after {
 	opacity: 1;
-	transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-101%, 0, 0);
 }
 
 .page1 .p-titre:hover::after,
@@ -423,12 +455,13 @@ Ajout d'élément avant la vidéo se trouvant sur la 2ème partie de la page hom
   display: block;
 }
 .page1 .projets a:hover + img {
-  width: 50vh;
-  height: 50vh;
+  width: 20vw;
+  height: 20vw;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
+  margin-top: calc(250vh - 10vw);
   margin-right: 8vw;
   right: 0;
 }
@@ -497,6 +530,15 @@ qui est utilisé lorsqu'on passe le curseur sur les liens se trouvant dans la ba
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes colorfill {
+  from {
+    filter: grayscale(0);
+  }
+  to {
+    filter: grayscale(1);
   }
 }
 

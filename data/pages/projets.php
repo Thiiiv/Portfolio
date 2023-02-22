@@ -19,6 +19,7 @@
                 <source src="../videos/video11.mp4" type="video/mp4">
             </video>
         </div>
+        <div class="all-div">
         <section class="accueil">
             <header>
                 <?php
@@ -31,6 +32,7 @@
         </section>
         <section class="page1" id="robot" >
         </section>
+        </div>
         <footer>
 
         </footer>

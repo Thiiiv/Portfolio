@@ -37,6 +37,7 @@
                 <source src="../videos/video11.mp4" type="video/mp4">
             </video>
         </div>
+        <div class="all-div">
         <section class="accueil">
             <header>
                 <?php
@@ -52,6 +53,7 @@
                 <img src="../images/CV2.jpg" alt="Mon CV" class="CV">
                 </a>
         </section>
+        </div>
         <footer>
 
         </footer>
