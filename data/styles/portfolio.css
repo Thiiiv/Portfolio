@@ -99,7 +99,6 @@ Le contenu est organisé sur la même ligne
   z-index: 100;
   display: flex;
   width: 100%;
-  height: 8vh;
   flex-direction: row;
   background-color: transparent;
   justify-content: space-between;
@@ -116,6 +115,7 @@ Le contenu est organisé sur la même ligne
   justify-content: center;
   color: white;
   width: 20vw;
+  height: auto;
   font-size: 1.5em;
   background-color: black;
   border: 1vh solid black;
@@ -143,6 +143,7 @@ Barre de navigation qui se situe tout en haut de la première partie de la page
   bottom: 0;
   margin: auto;
   margin-right: 0;
+  margin-top: 0;
   background-color: black;
   border: 2vh solid black;
   border-bottom-left-radius: 20px;
@@ -220,12 +221,15 @@ le code est plutôt similaire à la première partie de la page
   left: 0;
   right: 0;
   margin: auto;
-  margin-top: 12vh;
+  margin-top: 15vh;
   top: 0;
   font-size: 4em;
   font-family: 'Poppins', sans-serif;
   border: 0.5vh solid black;
-  border-radius: 25px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 #intro .presentation {
   display: flex;
