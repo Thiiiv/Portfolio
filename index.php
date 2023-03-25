@@ -31,7 +31,7 @@
             </a>
         </section>
         <section class="page1" id="intro">
-            <h1>Introduction</h1>
+            <a href="data/pages/aProposDeMoi" class="intro-titre">A propos de moi</a>
             <div class="presentation">
                 <div class="present-text">
                 <p>Je suis JEYASEELAN Thivakar, un étudiant
@@ -68,5 +68,6 @@
         <footer>
 
         </footer>
+        <script type="text/javascript" src="data/styles/script.js"></script>
     </body>
 </html>

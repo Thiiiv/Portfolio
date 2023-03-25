@@ -24,7 +24,9 @@ Corps de la page
 */
 body {
   /*cursor: url('../images/cursor5.png') 2 2, auto;*/ /* changer le curseur par un curseur personnalisé */
+  overscroll-behavior-y: none;
 }
+
 /*
 Corps de la page
 overflox-x : hidden pour cacher ce qui dépasse horizontalement
@@ -77,12 +79,12 @@ le contenu est organisé en colonne
   flex-direction: column;
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .all-div section {
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  scroll-snap-align: start;
 }
 /*
 Première partie de la page
@@ -215,7 +217,7 @@ le code est plutôt similaire à la première partie de la page
   background-color: hsla(166, 100%, 94%, 0.733);
   flex-direction: row;
 }
-#intro h1 {
+#intro .intro-titre {
   width: 50vw;
   text-align: center;
   left: 0;
