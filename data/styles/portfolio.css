@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+/*
+Quelques commandes CSS pour toute la page
+
+Notamment pour éviter les liens soulignés, les liste avec des puces ou avec numérotation
+margin et padding à 0 pour éviter les espaces vides
+et une scroll-behavior pour changer le comportement du scroll, qui est là réglé sur fluide
+*/
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: black;
+    /*cursor: url('../images/cursor5.png') 2 2, auto;*/
+}
+/*
+Corps de la page
+*/
+body {
+  /*cursor: url('../images/cursor5.png') 2 2, auto;*/ /* changer le curseur par un curseur personnalisé */
+  overscroll-behavior-y: none;
+}
+
+/*
+Corps de la page
+overflox-x : hidden pour cacher ce qui dépasse horizontalement
+*/
+html {
+  overflow-x: hidden; /* Permet de cacher ce qui dépasse horizontalement */
+}
+/* largeur de la barre de défilement */
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+  /* le fond de la barre de défilement en noir */
+::-webkit-scrollbar-track {
+    background: black;
+}
+  
+  /*
+  thumb du scrollbar
+  qui est blanc pour faire le contraste avec le scrollbar
+   */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
+  
+  /* 
+  thumb du scrollbar qui change de couleur quand le curseur est dessus
+   */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(220, 220, 220);
+}
+
+
+/*
+Div contenant les vidéos
+
+Ce div est en z-index -100, c'est à dire qu'il est à l'arrière plan
+le contenu est organisé en colonne
+*/
+.fond {
+  position: fixed;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.all-div {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+.all-div section {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+}
+/*
+Première partie de la page
+
+hauteur réglé sur la taille de la fenêtre
+*/
+/*
+Barre de navigation qui se situe tout en haut de la première partie de la page
+
+Le contenu est organisé sur la même ligne
+*/
+.menu {
+  top: 0;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-color: transparent;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: 'Manrope', sans-serif;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /*cursor: url('../images/cursor5.png') 2 2, auto;*/
+  position: fixed;
+}
+.menu .profil-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  width: 20vw;
+  height: auto;
+  font-size: 1.5rem;
+  background-color: black;
+  border: 1vh solid black;
+  border-bottom-right-radius: 20px;
+}
+.menu .profil-menu p {
+  margin-left: 1vw;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.menu .profil-menu img {
+  width: 3vw;
+  height: auto;
+  margin-right: 1vw;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/*
+Barre de navigation qui se situe tout en haut de la première partie de la page
+*/
+.menu .pages {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-right: 0;
+  margin-top: 0;
+  background-color: black;
+  border: 2vh solid black;
+  border-bottom-left-radius: 20px;
+}
+.menu .pages a {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+/*
+Les liens/textes de la barre de navigation
+*/
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+/*
+style des boutons de la barre de navigation
+*/
+.menu .lien {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    padding: 1vh 1vh;
+}
+/*
+style des boutons de la barre de navigation lorsque le curseur est dessus
+*/
+.menu .pages .lien:hover {
+  animation: pulsate 1s ease-in-out infinite both;
+}
+.menu .pages .lien:hover a {
+  color: black;
+  /*cursor: url('../images/cursor5.png') 2 2, auto;*/
+}
+.pages > .lien:hover {
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/*
+style de la 2ème partie de la page
+
+le code est plutôt similaire à la première partie de la page
+*/
+.page1 {
+  width: 100%;
+  border: 0.1vh solid black;
+}
+#projets {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+#intro {
+  display: flex;
+  background-color: hsla(166, 100%, 94%, 0.63);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#intro .intro-titre {
+  width: 50vw;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 15vh;
+  top: 0;
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  border: 0.5vh solid black;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 1vh 5vw;
+}
+#intro .presentation {
+  display: flex;
+  flex-direction: row;
+  margin: 5vh auto;
+  justify-content: space-between;
+}
+#intro .presentation .present-text, #intro .presentation .photo-profil {
+  border: 0.5vh solid black;
+  border-radius: 25px;
+}
+#intro .presentation .present-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+}
+#intro .present-text p {
+  font-size: 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  padding: 1vh 1vw;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*
+les vidéos en fond 
+
+leur taille est ajusté en fonction de la taille de la fenêtre avec height à 100vh et width à 100vw
+les vidéos ont été étirés horizontalement pour remplir la largeur de la page avec transform: scaleX
+leur opacité est réduit de 20%
+*/
+#background-video {
+    min-height: 100vh;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    opacity: 0.80;
+    position: fixed;
+    overflow: hidden;
+}
+/*
+Titre en gros se trouvant sur la 1ère partie de la page
+*/
+.accueil h1 {
+  font-family: 'Manrope', sans-serif;
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translateY(-45%);
+    animation: shadow-drop-center 0.4s alternate infinite both;
+    color: black;
+    cursor: default;
+}
+/*
+Ajout d'élément après le titre de la 1ère partie de la page
+Il s'agit de la petit flèche qui est animé
+*/
+.accueil h1::after {
+    content: "🢗";
+    display: block;
+    font-size: 8rem;
+    animation: bounce-bottom 1.5s ease infinite alternate both;
+    border: 1vh solid white;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    cursor: pointer;
+}
+/*
+Style concernant un div se trouvant sur la page motivations.html
+
+le texte est centré horizontalement avec right:0, left:0 et margin:auto
+flex est utilisé pour ce div
+*/
+.text {
+  top : 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+/*
+la balise p de class .motivation qui se trouve dans le div .text
+le fond est blanc, les bordures également. 
+overflow-wrap: break-word permet de régler le comportement du texte lorsque celle ci dépasse horizontalement
+Dans ce cas, le mot sera coupé et une partie se trouvera à la ligne suivante
+*/
+.text .motivation{
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+  font-size: 1rem;
+  overflow-wrap: break-word;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: white;
+  border : 10px solid white;
+  border-radius: 10px;
+}
+/*
+texte de la page home.html
+
+c'est un peu près le même code que pour les balises p précèdents
+*/
+
+/*
+span de class .p-titre se trouvant dans la balise p de la page home.html
+*/
+.page1 .p-titre {
+  color: black;
+  font-weight: bold;
+  font-size: 5rem;
+	display: block;
+	position: relative;
+	padding: 0.2em 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.page1 .projets {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+}
+/*
+Style du lien vers la vidéo du projet se trouvant dans la 2ème partie de la page home.html
+*/
+.page1 .projets a {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 3vh;
+  display: block;
+	position: relative;
+	padding: 0.2em 0;
+}
+.page1 {
+  background-color: hsla(173, 100%, 92%, 0.733);
+  width: 100%;
+}
+/*
+Ajout d'élément avant la vidéo se trouvant sur la 2ème partie de la page home.html
+*/
+
+.menu .Nom {
+  font-weight: bolder;
+  margin-right: 10vw;
+  color: white;
+}
+
+
+.page1 .p-titre::after {
+	content: '';
+  position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.15em;
+	background-color: white;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+
+/* Slide in */
+.page1 .p-titre {
+	overflow: hidden;
+}
+
+.page1 .p-titre::after {
+	opacity: 1;
+	transform: translate3d(-101%, 0, 0);
+}
+
+.page1 .p-titre:hover::after,
+.page1 .p-titre:focus::after{
+	transform: translate3d(0, 0, 0);
+}
+
+/* Fade in */
+.page1 .projets a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.2em;
+	background-color: black;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.page1 .projets a:hover::after,
+.page1 .projets a:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.2em, 0);
+}
+.page1 .projets .projet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: min-content;
+}
+.page1 .projets img {
+  display: none;
+}
+.page1 .projets .robot:hover + #robot-img {
+  display: block;
+}
+.page1 .projets .potager:hover + #potager-img {
+  display: block;
+}
+.page1 .projets .eolienne:hover + #eolienne-img {
+  display: block;
+}
+.page1 .projets .course:hover + #course-img {
+  display: block;
+}
+.page1 .projets a:hover + img {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-top: calc(250vh - 10vw);
+  margin-right: 8vw;
+  right: 0;
+}
+
+/*
+Animation de rebondissement
+*/
+@keyframes bounce-bottom {
+    from {
+      transform: translateY(20px);
+      animation-timing-function: ease-in;
+    }
+    to {
+      transform: translateY(0px);
+      animation-timing-function: ease-out;
+    }
+}
+/*
+animations de changement de couleur de la bordure
+*/
+@keyframes color-change {
+  0% {
+    border-color: #19dcea;
+  }
+  25% {
+    border-color: #b22cff;
+  }
+  50% {
+    border-color: #ea2222;
+  }
+  75% {
+    border-color: #f5be10;
+  }
+  100% {
+    border-color: #3bd80d;
+  }
+}
+/*
+Animatopns de changement de couleur. Passage de noir à blanc
+*/
+@keyframes black-white {
+  from {color: black;}
+  to {color: #858585;}
+}
+/*
+Animations de l'ombre d'un élément
+*/
+@keyframes shadow-drop {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+/*
+Animation de battement
+qui est utilisé lorsqu'on passe le curseur sur les liens se trouvant dans la barre de navigation
+*/
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes colorfill {
+  from {
+    filter: grayscale(0);
+  }
+  to {
+    filter: grayscale(1);
+  }
+}
+
+
+
+/*
+Partie responsive
+*/
+@media only screen and (max-width: 900px) {
+  /*
+  Les vidéos en fond de la page
+  On passe sur une taille fixe pour la hauteur, tandis que la largeur est sur auto
+  */
+  #background-video {
+    overflow: hidden;
+    height: 100vh;
+    width: auto;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+  }
+  /*
+  Texte de la page motivations.html
+  Changement de la taille de la police
+  */
+  .text .motivation {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  /*
+  Texte de la page home.html
+  Changement de la taille de la police
+  */
+  .page1 .home-text {
+    font-size: 5rem;
+  }
+  /*
+  Titre, span .p-titre se trouvant dans la balise p de class .home-text home.html
+  Changement de la taille de la police
+  */
+  .page1 .home-text .p-titre {
+    font-size: 7rem;
+  }
+  
+}
