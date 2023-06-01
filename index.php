@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
-        <link rel="stylesheet" href="data/styles/portfolio.css" type="text/css">
+        <link rel="stylesheet" href="data/styles/style.css" type="text/css">
+        <link rel="stylesheet" href="data/styles/index.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,15 +21,13 @@
             </video> 
         </div>
         <div class="all-div">
-        <section class="accueil">
-            <header>
-                <?php
+        <header>
+            <?php
                 include ('data/pages/headIndex.inc.html');
-                ?>
-            </header>
-            <a href="#intro">
-                <h1>Bienvenue sur mon portfolio</h1>
-            </a>
+            ?>
+        </header>
+        <section class="accueil">
+            <a href="#intro">Bienvenue sur mon portfolio</a>
         </section>
         <section class="page1" id="intro">
             <div class="intro">
@@ -39,6 +38,8 @@
                     <div class="present-text">
                     <p>Je suis JEYASEELAN Thivakar, un étudiant
                         en 1ère année de BUT Informatique à l'IUT de Marne-La-Vallée.
+                        Je suis un passionné d'informatique, mes passes temps sont la programmation,
+                         la veille technologique et les jeux vidéos. 
                     </p>
                     </div>
                     <div class="photo-profil">
@@ -72,6 +73,5 @@
         <footer>
 
         </footer>
-        <script type="text/javascript" src="data/styles/script.js"></script>
     </body>
 </html>
