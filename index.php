@@ -31,7 +31,7 @@
         </section>
         <section class="page1" id="intro">
             <div class="intro">
-                <div>
+                <div class="titre">
                     <span class="intro-titre">A propos de moi</span>
                 </div>
                 <div class="presentation">
