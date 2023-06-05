@@ -17,7 +17,7 @@
     <body>
         <div class="fond">
             <video autoplay muted loop id="background-video">
-                <source src="../videos/video18.mp4" type="video/mp4">
+                <source src="../videos/Video18.mp4" type="video/mp4">
             </video>
         </div>
         <div class="all-div">
@@ -26,10 +26,29 @@
                 include ('headPages.inc.html');
                 ?>
             </header>
-        <section class="accueil">
+        <section class="page accueil">
             <a href="#robot">Me contacter</a>
         </section>
-        <section class="page1" id="robot" >
+        <section class="page page1" id="intro">
+            <div class="formulaire">
+                <form action="mailto:thivakar.jeyas@gmail.com" method="get">
+                    <p>Nom :</p>
+                    <input type="text" name="name" id="text"/>
+                    <p>Email :</p>
+                    <input type="text" name="email" id="text"/>
+                    <p>
+                        Commentaires :
+                        <br />
+                        <textarea name="comments" rows="12" cols="35">blablablabla</textarea>
+                        <br />
+                    </p>
+    
+                    <div class="buttons">
+                        <input type="submit" name="submit" value="Envoyer" id="button"/>
+                        <input type="reset" name="reset" value="Effacer" id="button"/>
+                    </div<
+                </form>
+            </div>
         </section>
         </div>
         <footer>

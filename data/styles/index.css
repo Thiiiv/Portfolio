@@ -1,70 +1,70 @@
 #projets {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    right: 0;
-    left: 0;
-    margin: auto;
-  }
-  #intro {
-    display: flex;
-    background-color: hsla(166, 100%, 94%, 0.63);
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  #intro .intro-titre {
-    width: 50vw;
-    text-align: center;
-    margin-top: 15vh;
-    font-size: 2.5rem;
-    font-family: 'Poppins', sans-serif;
-    border: 0.5vh solid black;
-    border-bottom-right-radius: 100px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    padding: 1vh 5vw;
-  }
-  #intro .presentation {
-    display: flex;
-    flex-direction: row;
-    margin: 5vh 2vw;
-    justify-content: space-between;
-  }
-  #intro .presentation .present-text, #intro .presentation .photo-profil {
-    border: 0.5vh solid black;
-    border-radius: 25px;
-  }
-  #intro .presentation .photo-profil {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #intro .presentation #img-profil {
-    width: 20vw;
-    height: auto;
-  }
-  #intro .presentation .present-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1vw;
-  }
-  #intro .present-text p {
-    font-size: 1.5rem;
-    font-family: 'Manrope', sans-serif;
-    padding: 1vh 1vw;
-  }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+#intro {
+  display: flex;
+  background-color: hsla(166, 100%, 94%, 0.63);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#intro .intro-titre {
+  width: 50vw;
+  text-align: center;
+  margin-top: 15vh;
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  border: 0.5vh solid black;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 1vh 5vw;
+}
+#intro .presentation {
+  display: flex;
+  flex-direction: row;
+  margin: 5vh 2vw;
+  justify-content: space-between;
+}
+#intro .presentation .present-text, #intro .presentation .photo-profil {
+  border: 0.5vh solid black;
+  border-radius: 25px;
+}
+#intro .presentation .photo-profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro .presentation #img-profil {
+  width: 20vw;
+  height: auto;
+}
+#intro .presentation .present-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+}
+#intro .present-text p {
+  font-size: 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  padding: 1vh 1vw;
+}
   
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* Slide in */
 .page1 .p-titre {
@@ -109,74 +109,81 @@
 	opacity: 1;
 	transform: translate3d(0, 0.2em, 0);
 }
-.page1 .projets .projet {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: min-content;
-}
 .page1 .projets img {
   display: none;
 }
-.page1 .projets .robot:hover + #robot-img {
+.page1 .projets .robot:hover + #robot-img,
+.page1 .projets .python:hover + #python-img,
+.page1 .projets .java:hover + #java-img,
+.page1 .projets .unesco:hover + #website-img,
+.page1 .projets .ihm:hover + #ihm-img {
   display: block;
 }
-.page1 .projets .potager:hover + #potager-img {
-  display: block;
-}
-.page1 .projets .eolienne:hover + #eolienne-img {
-  display: block;
-}
-.page1 .projets .course:hover + #course-img {
-  display: block;
-}
+
 .page1 .projets a:hover + img {
   width: 20vw;
   height: 20vw;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  margin-top: calc(250vh - 10vw);
-  margin-right: 8vw;
-  right: 0;
+  right: 8vw;
+  bottom: 30vh;
 }
 
 /*
 span de class .p-titre se trouvant dans la balise p de la page home.html
 */
 .page1 .p-titre {
-    color: black;
-    font-weight: bold;
-    font-size: 5em;
-      display: block;
-      position: relative;
-      padding: 0.2em 0;
-    font-family: 'Ubuntu', sans-serif;
-  }
-  .page1 .projets {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3vh;
-    text-align: center;
-    font-family: 'Manrope', sans-serif;
-  }
-  /*
-  Style du lien vers la vidéo du projet se trouvant dans la 2ème partie de la page home.html
-  */
-  .page1 .projets a {
-    color: black;
-    font-size: 2em;
-    margin-bottom: 3vh;
-    display: block;
-      position: relative;
-      padding: 0.2em 0;
+  color: black;
+  font-weight: bold;
+  font-size: 5em;
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.page1 .projets {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+}
+/*
+Style du lien vers la vidéo du projet se trouvant dans la 2ème partie de la page home.html
+*/
+.page1 .projets a {
+  color: black;
+  font-size: 2em;
+  margin-bottom: 3vh;
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+@media only screen and (max-width: 900px) {
+  #intro .presentation {
+    flex-direction: column-reverse;
+    margin: 5vh 2vw;
+    justify-content: space-between;
   }
 
-  @media only screen and (max-width: 900px) {
-    #intro .presentation {
-      flex-direction: column-reverse;
-      margin: 5vh 2vw;
-      justify-content: space-between;
-    }
+  .page1 .projets .robot:hover + #robot-img,
+  .page1 .projets .python:hover + #python-img,
+  .page1 .projets .java:hover + #java-img,
+  .page1 .projets .unesco:hover + #website-img,
+  .page1 .projets .ihm:hover + #ihm-img {
+    display: none;
   }
+  #intro .intro-titre {
+    font-size: 1.5rem;
+  }
+  #intro .present-text p {
+    font-size: 1.25rem;
+  }
+  .page1 .projets a {
+    font-size: 1.25rem;
+  }
+  .page1 .p-titre {
+    font-size: 3rem;
+  }
+  
+}

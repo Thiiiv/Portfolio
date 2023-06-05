@@ -87,20 +87,24 @@ leur opacité est réduit de 20%
   width: auto;
   height: auto;
   opacity: 0.80;
+  overflow: hidden;
 
 }
 
 .all-div {
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
-  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 .all-div section {
   height: 100vh;
   width: 100%;
-  scroll-snap-align: start;
+}
+.page {
+  scroll-snap-align: center;
+}
+.all-div, .page {
+  height: 100vh;
+  margin: 0 auto;
 }
 /*
 Première partie de la page
@@ -136,7 +140,7 @@ Le contenu est organisé sur la même ligne
   background-color: black;
   border: 1vh solid black;
   border-bottom-right-radius: 30px;
-  margin-right: 5vw;
+  margin-right: auto;
 }
 .menu .profil-menu p {
   margin-left: 1vw;
@@ -167,6 +171,8 @@ Barre de navigation qui se situe tout en haut de la première partie de la page
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 50vw;
+  justify-content: space-evenly;
 }
 .menu .pages button {
   color: white;
@@ -189,7 +195,7 @@ style des boutons de la barre de navigation
     border: none;
     background-color: transparent;
     font-family: 'Poppins', sans-serif;
-    padding: 1vh 3vh;
+    padding: 1.5vh 2vw;
 }
 /*
 style des boutons de la barre de navigation lorsque le curseur est dessus
@@ -204,7 +210,7 @@ style des boutons de la barre de navigation lorsque le curseur est dessus
 .pages a > .lien:hover {
   background-color: white;
   color: black;
-  border-radius: 20px;
+  border-radius: 8vw;
   cursor: pointer;
 }
 /*
@@ -221,6 +227,7 @@ le code est plutôt similaire à la première partie de la page
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   width: 100%;
 }
 /*
@@ -228,10 +235,10 @@ Titre en gros se trouvant sur la 1ère partie de la page
 */
 .accueil a {
   font-family: 'Manrope', sans-serif;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: bold;
   text-align: center;
-  animation: shadow-drop-center 0.4s alternate infinite both;
+  /*animation: black-white 1s alternate infinite both;*/
   color: black;
   cursor: pointer;
 }
@@ -240,13 +247,13 @@ Ajout d'élément après le titre de la 1ère partie de la page
 Il s'agit de la petit flèche qui est animé
 */
 .accueil a::after {
-  content: "🢗";
+  content: "↓";
   display: block;
-  font-size: 100%;
+  font-size: 5vw;
   animation: bounce-bottom 1.5s ease infinite alternate both;
-  border: 1vh solid white;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 7vw;
+  height: 7vw;
+  border: 2vw solid white;
   border-radius: 100%;
   left: 0;
   right: 0;
@@ -264,7 +271,7 @@ flex est utilisé pour ce div
   top : 100vh;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -288,8 +295,9 @@ c'est un peu près le même code que pour les balises p précèdents
 
 .page1 {
   background-color: hsla(173, 100%, 92%, 0.542);
-  width: 100%;
   border-top : 0.2vw solid hsla(0, 0%, 22%, 0.733); 
+  width: 100%;
+  height: 100vh;
 }
 /*
 Ajout d'élément avant la vidéo se trouvant sur la 2ème partie de la page home.html
@@ -301,18 +309,60 @@ Ajout d'élément avant la vidéo se trouvant sur la 2ème partie de la page hom
   color: white;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+}
+.footer .credits {
+  color: black;
+  bottom: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.footer .credits span {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.footer .contact {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .contact img {
+  max-height: 20vh;
+  filter: grayscale(1);
+  transform: scale(1);
+  transition: filter 1s;
+  transition: transform 0.5s;
+}
+.footer .contact img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
 /*
 Animation de rebondissement
 */
 @keyframes bounce-bottom {
-    from {
-      transform: translateY(20px);
-      animation-timing-function: ease-in;
-    }
-    to {
-      transform: translateY(0px);
-      animation-timing-function: ease-out;
-    }
+  from {
+    transform: translateY(20px);
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
 }
 /*
 animations de changement de couleur de la bordure
@@ -339,7 +389,7 @@ Animatopns de changement de couleur. Passage de noir à blanc
 */
 @keyframes black-white {
   from {color: black;}
-  to {color: #858585;}
+  to {color: #ffffff;}
 }
 /*
 Animations de l'ombre d'un élément
@@ -349,7 +399,7 @@ Animations de l'ombre d'un élément
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
   100% {
-    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+    text-shadow: 0 10px 18px rgba(0, 0, 0, 0.35);
   }
 }
 /*
@@ -370,10 +420,10 @@ qui est utilisé lorsqu'on passe le curseur sur les liens se trouvant dans la ba
 
 @keyframes colorfill {
   from {
-    filter: grayscale(0);
+    filter: grayscale(1);
   }
   to {
-    filter: grayscale(1);
+    filter: grayscale(0);
   }
 }
 
@@ -405,5 +455,34 @@ Partie responsive
     font-size: 2em;
     font-weight: bold;
   }
+
+  .accueil a {
+    font-size: 3rem;
+  }
+  .accueil a:after {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .menu .profil-menu .Nom {
+    font-size: 1rem;
+  }
+  .menu .pages a button{
+    font-size: 1rem;
+  }
+  .menu .profil-menu {
+    display: none;
+  }
+
+  .menu .pages {
+    width: 100vw;
+  }
   
+  .footer .credits span {
+    font-size: 1rem;
+  }
+  
+  .footer .contact img {
+    max-height: 10vh;
+  }
 }

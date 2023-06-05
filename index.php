@@ -17,7 +17,7 @@
     <body>
         <div class="fond">  
             <video autoplay muted loop id="background-video">
-                <source src="data/videos/video13.mp4" type="video/mp4">
+                <source src="data/videos/Video13.mp4" type="video/mp4">
             </video> 
         </div>
         <div class="all-div">
@@ -26,17 +26,17 @@
                 include ('data/pages/headIndex.inc.html');
             ?>
         </header>
-        <section class="accueil">
-            <a href="#intro">Bienvenue sur mon portfolio</a>
+        <section class="page accueil">
+            <a href="#intro">Bienvenue sur mon portfolio</a> 
         </section>
-        <section class="page1" id="intro">
+        <section class="page page1" id="intro">
             <div class="intro">
                 <div class="titre">
                     <span class="intro-titre">A propos de moi</span>
                 </div>
                 <div class="presentation">
                     <div class="present-text">
-                    <p>Je suis JEYASEELAN Thivakar, un étudiant
+                    <p>Je suis <b>JEYASEELAN Thivakar</b>, un étudiant
                         en 1ère année de BUT Informatique à l'IUT de Marne-La-Vallée.
                         Je suis un passionné d'informatique, mes passes temps sont la programmation,
                          la veille technologique et les jeux vidéos. 
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </section>
-        <section class="page1" id="projets">
+        <section class="page page1" id="projets">
             <a href="data/pages/projets.php" class="p-titre">Projets</a>
             <div class="projets">
                 <div class="projet">
@@ -56,22 +56,28 @@
                     <img src="data/images/robot.png" alt="Robot" id="robot-img"/>
                 </div>
                 <div class="projet">
-                    <a href="data/pages/projets.php#course" class="course">Course en Cours</a>
-                    <img src="data/images/formule-1.png" alt="Voiture" id="course-img"/>
+                    <a href="data/pages/projets.php#unesco" class="unesco">Site Web Unesco</a>
+                    <img src="data/images/website.png" alt="Unesco Website" id="website-img"/>
                 </div>
                 <div class="projet">
-                    <a href="data/pages/projets.php#eolienne" class="eolienne">Eolienne verticale</a>
-                    <img src="data/images/eolienne.png" alt="Eolienne" id="eolienne-img"/>
+                    <a href="data/pages/projets.php#python" class="python">Bataille des boules</a>
+                    <img src="data/images/python.png" alt="Jeu Python" id="python-img"/>
                 </div>
                 <div class="projet">
-                    <a href="data/pages/projets.php#potager" class="potager">Potager connecté</a>
-                    <img src="data/images/potager.png" alt="Potager" id="potager-img"/>
+                    <a href="data/pages/projets.php#java" class="java">Backpack Hero</a>
+                    <img src="data/images/java.png" alt="Jeu Java" id="java-img"/>
                 </div>
-            </div> 
+                <div class="projet">
+                    <a href="data/pages/projets.php#ihm" class="ihm">Conception d'interface</a>
+                    <img src="data/images/ihm.png" alt="Interface IHM" id="ihm-img"/>
+                </div>
+            </div>
+        </section>
+        <section class="page">
+                <?php
+                    include("data/pages/footerIndex.inc.html");
+                ?>
         </section>
         </div>
-        <footer>
-
-        </footer>
     </body>
 </html>

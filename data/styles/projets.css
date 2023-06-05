@@ -4,18 +4,93 @@
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 .page1 .projet-title {
     font-size: 4rem;
     font-weight: bold;
+    text-align: center;
+    justify-content: center;
 }
-.page1 video {
+.page1 .projet-media #media {
     height: 30vh;
-    margin: 4vh 0;
+    width: auto;
+    margin: 2vh 0;
     border-radius: 20px;
+}
+.page1:nth-child(7) .projet-media #media {
+    border-radius: 0;
+}
+.page1 .projet-media img, .page1 .projet-logo img {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.page1 .projet-media img:hover, .page1 .projet-logo img:hover {
+    transform: scale(1.2);
 }
 .page1 .projet-text {
     width: 85vw;
-    text-align: center;
+    text-align: justify;
     font-size: 1.5rem;
+    margin-bottom: 3vh;
+}
+.page1 .projet-logo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    max-height: 10vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page1 .projet-logo img {
+    max-height: 8vh;
+    filter: grayscale(1);
+}
+.page1 .projet-logo img:hover {
+    animation: colorfill 0.5s forwards;
+}
+
+@media only screen and (max-width: 900px) {
+    .page1 .projet-text {
+        font-size: 1rem;
+    }
+    .page1 .projet-logo img {
+        filter: grayscale(0);
+    }
+    .page1 .projet-title {
+        font-size: 1.5rem;
+    }
+    .page1 .projet-media #media {
+        height: 15vh;
+        width: auto;
+    }
+    .page1 .projet-logo img {
+        max-height: 5vh;
+    }
+
+    .page1 .projet-text span {
+        font-size: 1rem;
+        display: none;
+    }
+    section:nth-child(3) .projet-text::before {
+        content: "Le Robot Sanitaire est un projet de Terminale STI2D. Le but était de créer un robot sanitaire grâce à une carte Arduino. Dans le résultat, nous devions avoir le robot, le programme Arduino, une télécommande programmée expès pour le robot et une appli de télécommande.";
+    }
+    section:nth-child(4) .projet-text::before {
+        content: "C'est un projet de création d'un site web dynamique et responsive, en partenariat avec l'Unesco. Les langages de programmation utilisés sont : HTML, CSS, PHP et SQL.";
+    }
+    section:nth-child(5) .projet-text::before {
+        content: "Un jeu réalisé en Python en utilisant une bibliothèque propre à l'IUT, voici ce qu'est le projet Bataille des boules. 2 joueurs s'affrontent. Celui qui couvrent le plus d'espace avec ses cercles gagne. Les joueurs peuvent diviser le cercle du joueur adverse en cliquant dans celui-ci.";
+    }
+    section:nth-child(6) .projet-text::before {
+        content: "Un projet ambitieux et passionnant. En effet, Backpack Hero est un jeu qui va au-delà de ce qu'on faisait avec le projet Bataille des boules cité plus haut. Le but est de reproduire au mieux le vrai jeu de même nom en utilisant le langage Java.";
+    }
+    section:nth-child(7) .projet-text::before {
+        content: "La conception d'interface, nous a beaucoup apporté que ça soit au terme de design, d'ergonomie mais aussi de rédaction de rapport. L'objectif de ce projet est de concevoir avec Figma, une interface correspondant au sujet choisi.";
+    }
+    .page1 .projet-text::after {
+        content: "Voici les outils utilisés pour ce projet :";
+        font-weight: bold;
+    }
 }

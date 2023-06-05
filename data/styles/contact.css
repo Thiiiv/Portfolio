@@ -1,0 +1,69 @@
+.page1 .formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.page1 .formulaire form {
+    text-align: center;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page1 .formulaire form textarea {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 2vw;
+    width: 30vw;
+}
+.page1 .formulaire form #text {
+    border-radius: 25px;
+    border-color: black;
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+}
+.page1 .formulaire form .buttons {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page1 .formulaire form #button {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    transform: scale(1);
+    transition: transform 0.5s;
+    border: none;
+}
+.page1 .formulaire form #button:hover {
+    transform: scale(1.1);
+}
+.page1 .formulaire {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .page1 .formulaire form .buttons {
+        width: 60%;
+    }
+    .page1 .formulaire form #button {
+        width: 25vw;
+    }
+    .page1 .formulaire form textarea, 
+    .page1 .formulaire form #text {
+        width: 70vw;
+    }
+}
