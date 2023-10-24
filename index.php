@@ -26,8 +26,9 @@
                 include ('data/pages/headIndex.inc.html');
             ?>
         </header>
-        <section class="page accueil">
+        <section class="page accueil" id="accueil">
             <a href="#intro">Bienvenue sur mon portfolio</a> 
+            <a href="#intro" class="arrow">↓</a>
         </section>
         <section class="page page1" id="intro">
             <div class="intro">
@@ -36,10 +37,10 @@
                 </div>
                 <div class="presentation">
                     <div class="present-text">
-                    <p>Je suis <b>JEYASEELAN Thivakar</b>, un étudiant
-                        en 1ère année de BUT Informatique à l'IUT de Marne-La-Vallée.
-                        Je suis un passionné d'informatique, mes passes temps sont la programmation,
-                         la veille technologique et les jeux vidéos. 
+                    <p>Je suis <b>Thivakar JEYASEELAN</b>, un étudiant
+                        en 2ème année de BUT Informatique à l'IUT de Marne-La-Vallée.
+                        Je suis un passionné d'informatique, mes passions sont la programmation,
+                        la veille technologique et les jeux vidéos. 
                     </p>
                     </div>
                     <div class="photo-profil">
