@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION['actualPage'] = "projets";
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -23,11 +27,12 @@
         <div class="all-div">
         <header>
             <?php
-                include ('headPages.inc.html');
+                include ('headPages.inc.php');
             ?>
         </header>
-        <section class="page accueil">
+        <section class="page accueil" id="accueil">
             <a href="#robot">Mes Projets</a>
+            <a href="#intro" class="arrow">↓</a>
         </section>
         <section class="page page1" id="robot" >
                 <div class="projet-title-div">

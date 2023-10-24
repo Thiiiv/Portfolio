@@ -44,8 +44,9 @@
                 include ('headPages.inc.html');
                 ?>
             </header>
-        <section class="accueil">
+            <section class="page accueil" id="accueil">
             <a href="#page1">Mon CV</a>
+            <a href="#intro" class="arrow">↓</a>
         </section>
         <section class="page1" id="page1" >
                 <a href="../images/CV_JEYASEELAN_Thivakar.pdf" class="lien-cv">

@@ -17,17 +17,18 @@
     <body>
         <div class="fond">
             <video autoplay muted loop id="background-video">
-                <source src="../videos/Video18.mp4" type="video/mp4">
+                <source src="../videos/Video16.mp4" type="video/mp4">
             </video>
         </div>
         <div class="all-div">
             <header>
                 <?php
-                include ('headPages.inc.html');
+                include ('headPages.inc.php');
                 ?>
             </header>
-        <section class="page accueil">
+            <section class="page accueil" id="accueil">
             <a href="#robot">Me contacter</a>
+            <a href="#intro" class="arrow">↓</a>
         </section>
         <section class="page page1" id="intro">
             <div class="formulaire">
@@ -37,22 +38,24 @@
                     <p>Email :</p>
                     <input type="text" name="email" id="text"/>
                     <p>
-                        Commentaires :
+                        Message :
                         <br />
-                        <textarea name="comments" rows="12" cols="35">blablablabla</textarea>
+                        <textarea name="comments" rows="12" cols="35" placeholder="Ecrivez votre message"></textarea>
                         <br />
                     </p>
     
                     <div class="buttons">
                         <input type="submit" name="submit" value="Envoyer" id="button"/>
                         <input type="reset" name="reset" value="Effacer" id="button"/>
-                    </div<
+                    </div>
                 </form>
             </div>
         </section>
+        <section class="page">
+                <?php
+                    include("footerPages.inc.html");
+                ?>
+        </section>
         </div>
-        <footer>
-
-        </footer>
     </body>
 </html>
