@@ -34,6 +34,15 @@
             <a href="#robot">Mes Projets</a>
             <a href="#intro" class="arrow">↓</a>
         </section>
+        <section class="page page1">
+            <div class="summary">
+                <a href="#robot" class="summary-link"><span class="summary-text">Robot Sanitaire</span></a>
+                <a href="#unesco" class="summary-link"><span class="summary-text">Site Web Unesco</span></a>
+                <a href="#python" class="summary-link"><span class="summary-text">Bataille des boules</span></a>
+                <a href="#java" class="summary-link"><span class="summary-text">Backpack Hero</span></a>
+                <a href="#ihm" class="summary-link"><span class="summary-text">Conception d'interface</span></a>
+            </div>
+        </section>
         <section class="page page1" id="robot" >
                 <div class="projet-title-div">
                     <span class="projet-title">Robot Sanitaire</span>
