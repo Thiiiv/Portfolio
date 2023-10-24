@@ -225,6 +225,7 @@ le code est plutôt similaire à la première partie de la page
 
 .accueil {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -246,18 +247,13 @@ Titre en gros se trouvant sur la 1ère partie de la page
 Ajout d'élément après le titre de la 1ère partie de la page
 Il s'agit de la petit flèche qui est animé
 */
-.accueil a::after {
-  content: "↓";
+.accueil .arrow {
   display: block;
   font-size: 5vw;
   animation: bounce-bottom 1.5s ease infinite alternate both;
   width: 7vw;
   height: 7vw;
-  border: 2vw solid white;
   border-radius: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
   background-color: white;
   cursor: pointer;
 }
@@ -294,7 +290,7 @@ c'est un peu près le même code que pour les balises p précèdents
 
 
 .page1 {
-  background-color: hsla(173, 100%, 92%, 0.542);
+  background-color: hsla(0, 0%, 100%, 0.7);
   border-top : 0.2vw solid hsla(0, 0%, 22%, 0.733); 
   width: 100%;
   height: 100vh;

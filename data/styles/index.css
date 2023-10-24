@@ -9,7 +9,7 @@
 }
 #intro {
   display: flex;
-  background-color: hsla(166, 100%, 94%, 0.63);
+  background-color: hsla(0, 0%, 100%, 0.7);
   flex-direction: row;
   align-items: center;
   justify-content: center;
