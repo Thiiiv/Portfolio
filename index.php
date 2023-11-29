@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION['actualPage'] = "index";
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -7,12 +11,6 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="data/styles/style.css" type="text/css">
         <link rel="stylesheet" href="data/styles/index.css" type="text/css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="fond">  
@@ -20,12 +18,23 @@
                 <source src="data/videos/Video13.mp4" type="video/mp4">
             </video> 
         </div>
-        <div class="all-div">
         <header>
-            <?php
-                include ('data/pages/headIndex.inc.html');
-            ?>
+            <div class="menu">
+                <div class="profil-menu">
+                    <a href="#accueil">
+                        <img src="data/images/profil.png" width="20px" class="profil">
+                        <p class="Nom">Thivakar JEYASEELAN</p> 
+                    </a>
+                </div>
+                <div class="pages">
+                    <a href="data/pages/projects.php"><button class="lien">Projets</button></a>
+                    <a href="data/pages/competences.php"><button class="lien">Compétences</button></a>
+                    <a href="data/pages/cv.php"><button class="lien">CV</button></a>
+                    <a href="data/pages/contact.php"><button class="lien">Contact</button></a>
+                </div>
+            </div>
         </header>
+        <div class="all-div">
         <section class="page accueil" id="accueil">
             <a href="#intro">Bienvenue sur mon portfolio</a> 
             <a href="#intro" class="arrow">↓</a>
@@ -39,9 +48,7 @@
                     <div class="present-text">
                     <p>Je suis <b>Thivakar JEYASEELAN</b>, un étudiant
                         en 2ème année de BUT Informatique à l'IUT de Marne-La-Vallée.
-                        Je suis un passionné d'informatique, mes passions sont la programmation,
-                        la veille technologique et les jeux vidéos. 
-                    </p>
+                        L'informatique, les jeux vidéos et les nouvelles technologies sont mes principaux centres d'intérêts.
                     </div>
                     <div class="photo-profil">
                         <img src="data/images/profil.png" alt="Photo de profil" id="img-profil" />
@@ -75,9 +82,18 @@
             </div>
         </section>
         <section class="page">
-                <?php
-                    include("data/pages/footerIndex.inc.html");
-                ?>
+            <div class="footer">
+                <div class="contact">
+                    <a href="https://github.com/Thiiiv"><img src="data/images/github_logo.png" alt="Logo GitHub" id="github-logo" /></a>
+                    <a href="https://www.linkedin.com/in/thivakar-jeyaseelan-76b209268/"><img src="data/images/linkedin_logo.png" alt="Logo linkedin" id="linkedin-logo" /></a>
+                    <a href="https://twitter.com/LFaucheur95"><img src="data/images/twitter_logo.png" alt="Logo twitter" id="twitter-logo" /></a>
+                </div>
+                <div class="credits">
+                    <span>Crédits<br>
+                    © 2023 JEYASEELAN Thivakar. All rights reserved. 
+                    </span>
+                </div>
+            </div>
         </section>
         </div>
     </body>
