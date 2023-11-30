@@ -27,6 +27,7 @@
                     </a>
                 </div>
                 <div class="pages">
+                    <a href="#accueil" class="home-link"><button class="lien">Accueil</button></a>
                     <a href="data/pages/projects.php"><button class="lien">Projets</button></a>
                     <a href="data/pages/competences.php"><button class="lien">Compétences</button></a>
                     <a href="data/pages/cv.php"><button class="lien">CV</button></a>
@@ -47,8 +48,10 @@
                 <div class="presentation">
                     <div class="present-text">
                     <p>Je suis <b>Thivakar JEYASEELAN</b>, un étudiant
-                        en 2ème année de BUT Informatique à l'IUT de Marne-La-Vallée.
-                        L'informatique, les jeux vidéos et les nouvelles technologies sont mes principaux centres d'intérêts.
+                        en <b>2ème année de BUT Informatique à l'IUT de Marne-La-Vallée.</b>
+                        L'informatique, les jeux vidéos et les nouvelles technologies sont <b>mes principaux centres d'intérêts.</b>
+                        J'ai des <b>expériences dans la partie software mais aussi hardware</b> de l'informatique. Vous pourrez <b>retrouver
+                        mes projets et mes compétences</b> en détails <b>sur les autres pages de mon portfolio.</b>
                     </div>
                     <div class="photo-profil">
                         <img src="data/images/profil.png" alt="Photo de profil" id="img-profil" />
@@ -57,26 +60,26 @@
             </div>
         </section>
         <section class="page page1" id="projets">
-            <a href="data/pages/projets.php" class="p-titre">Projets</a>
+            <a href="data/pages/projects.php" class="p-titre">Projets</a>
             <div class="projets">
                 <div class="projet">
-                    <a href="data/pages/projets.php#robot" class="robot">Robot sanitaire</a>
+                    <a href="data/pages/projects.php#robot" class="robot">Robot sanitaire</a>
                     <img src="data/images/robot.png" alt="Robot" id="robot-img"/>
                 </div>
                 <div class="projet">
-                    <a href="data/pages/projets.php#unesco" class="unesco">Site Web Unesco</a>
+                    <a href="data/pages/projects.php#website" class="unesco">Site Web Unesco</a>
                     <img src="data/images/website.png" alt="Unesco Website" id="website-img"/>
                 </div>
                 <div class="projet">
-                    <a href="data/pages/projets.php#python" class="python">Bataille des boules</a>
+                    <a href="data/pages/projects.php#python" class="python">Bataille des boules</a>
                     <img src="data/images/python.png" alt="Jeu Python" id="python-img"/>
                 </div>
                 <div class="projet">
-                    <a href="data/pages/projets.php#java" class="java">Backpack Hero</a>
+                    <a href="data/pages/projects.php#java" class="java">Backpack Hero</a>
                     <img src="data/images/java.png" alt="Jeu Java" id="java-img"/>
                 </div>
                 <div class="projet">
-                    <a href="data/pages/projets.php#ihm" class="ihm">Conception d'interface</a>
+                    <a href="data/pages/projects.php#ihm" class="ihm">Conception d'interface</a>
                     <img src="data/images/ihm.png" alt="Interface IHM" id="ihm-img"/>
                 </div>
             </div>
