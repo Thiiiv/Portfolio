@@ -1,41 +1,39 @@
 
 // Get the dock element
 const dock = document.querySelector('.dock');
-const firstProjectPage = document.querySelector('.project');
-firstProjectPage.addEventListener('mouseover', () => {
-  if (!dock.classList.contains('active')) {
-    dock.classList.toggle('active');
-    console.log('active');
-  }
-});
 
+const projets = document.querySelectorAll('.project');
 const accueil = document.getElementById('accueil');
 const summary = document.getElementById('summary');
+const footer = document.getElementById('footer');
+
+projets.forEach((projet) => {
+  projet.addEventListener('mouseover', () => {
+    if (!dock.classList.contains('active')) {
+      dock.classList.add('active');
+      console.log('active');
+    }
+  });
+});
 
 accueil.addEventListener('mouseover', () => {
-  dock.classList.remove('active');
-  console.log('deactive');
+  if (dock.classList.contains('active')) {
+    dock.classList.remove('active');
+    console.log('deactive');
+  }
 });
 summary.addEventListener('mouseover', () => {
-  dock.classList.remove('active');
-  console.log('deactive');
-});
-
-var previousScroll = window.scrollY || document.documentElement.scrollTop;
-window.addEventListener('scroll', function(event) {
-  var currentScroll = window.scrollY || document.documentElement.scrollTop;
-  
-  if (currentScroll < previousScroll) {
+  if (dock.classList.contains('active')) {
     dock.classList.remove('active');
-    console.log('Défilement vers le haut');
+    console.log('deactive');
   }
-
-  console.log("Il se passe quelque chose");
-  
-  previousScroll = currentScroll;
 });
-
-console.log(firstProjectPage);
+footer.addEventListener('mouseover', () => {
+  if (dock.classList.contains('active')) {
+    dock.classList.remove('active');
+    console.log('deactive');
+  }
+});
 
 // Array of project names
 const projectClass = document.querySelectorAll('.project');
