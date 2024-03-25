@@ -12,8 +12,8 @@
     justify-content: space-evenly;
 }
 
-.skill .illustr-and-project .attached-project-title, .skill .illustr-and-project .attached-project {
-    font-size: 2vw;
+.skill .illustr-and-project .attached-project-title, .skill .illustr-and-project .attached-project, .skill .illustr-and-project .level {
+    font-size: 2.2vw;
     font-weight: bold;
     height: 100%;
     width: 30%;
@@ -23,6 +23,27 @@
     background-color: white;
     border-radius: 100px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.skill .illustr-and-project .level {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.skill .illustr-and-project .level .level-title {
+    font-size: 1.8vw;
+}
+
+.skill .illustr-and-project .level .level-img {
+    width: 50%;
+    height: 50%;
+    border-radius: 90px;
+    object-fit: contain;
+}
+
+.skill .illustr-and-project .level .level-text {
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 /* This code don't work. I don't know why. I tried a lot of solutions */
@@ -36,8 +57,8 @@
 
 .skill .illustr-and-project .attached-project img {
     width: 95%;
-    height: 90%;
-    border-radius: 100px;
+    height: 95%;
+    border-radius: 90px;
     object-fit: cover;
 }
 
