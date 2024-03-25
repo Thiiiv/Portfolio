@@ -34,7 +34,7 @@ body {
 .all-pages {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -56,8 +56,8 @@ body {
     align-items: center;
     justify-content: space-evenly;
     height: 98vh;
-    width: 89vw;
-    margin: 1vh 1vw;
+    width: 90.5vw;
+    margin: 1vh 0.5vw;
     background-color: var(--primary-color);
     border-radius: 60px;
     will-change: scroll-position;
@@ -71,7 +71,7 @@ body {
     width: 8vw;
     position: fixed;
     top: 10vh;
-    left: 1vw;
+    left: 0.5vw;
     background-color: var(--primary-color);
     border-radius: 60px;
 }
