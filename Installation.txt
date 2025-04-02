@@ -1,0 +1,24 @@
+Installation Instructions for Modern Portfolio
+
+1. Clone the repository:
+   Open your terminal and run the following command to clone the repository:
+   git clone https://github.com/Thiiiv/Portfolio.git
+   Navigate into the project directory:
+   cd Portfolio
+
+2. Install dependencies:
+   Run the following command to install all necessary dependencies:
+   npm install
+
+3. Running the Application:
+   Start the development server with the following command:
+   npm run dev
+   Open your web browser and go to http://localhost:3000 to view the portfolio.
+
+4. Building for Production:
+   To build the optimized production version, use the following command:
+   npm run build
+   Start the production server with:
+   npm start
+
+Note: Ensure you have Node.js and npm installed on your system before running these commands.
