@@ -1,0 +1,234 @@
+{
+  "en": [
+    {
+      "id": "project-1",
+      "title": "ChillZone",
+      "description": "All-in-one application for students with click-and-collect, room booking, and navigation with a 2D map.",
+      "image": "/Images/ChillZone_desktop_connexion.png",
+      "tags": ["React Native", "ReactJS", "Atomic Design", "Jira", "Django"],
+      "slug": "chillzone",
+      "fullDescription": "ChillZone is an application developed for students at Gustave Eiffel University. It offers features such as click-and-collect for meals, room booking, and navigation with a 2D map. The project was carried out using React Native and ReactJS with Atomic Design architecture.",
+      "gallery": [
+        "/Images/ChillZone_accueil.png",
+        "/Images/ChillZone_compte.png",
+        "/Images/ChillZone_restaurant.png",
+        "/Images/ChillZone_connexion.png"
+      ],
+      "tools": ["React Native", "ReactJS", "Git", "Jira", "Figma", "Django"],
+      "skillsApplied": [
+        "Frontend Development",
+        "Project Management",
+        "UI/UX Design",
+        "Teamwork"
+      ],
+      "link": "https://example.com",
+      "github": "https://github.com/Thiiv/ChillZone"
+    },
+    {
+      "id": "project-2",
+      "title": "Huffman",
+      "description": "The Huffman project involved creating a program capable of compressing an image using the Huffman algorithm combined with differential imaging and decompressing it.",
+      "image": null,
+      "tags": ["C"],
+      "slug": "huffman",
+      "fullDescription": "The Huffman project involved creating a program capable of compressing an image using the Huffman algorithm combined with differential imaging and decompressing it. A differential image is one where the value of each pixel is the difference between that pixel's value and the previous pixel's value. This improves the efficiency of the Huffman algorithm. The project was implemented in C and allowed us to practice advanced image compression concepts.",
+      "gallery": [
+        null,
+        null,
+        null
+      ],
+      "tools": ["C", "VS Code"],
+      "skillsApplied": [
+        "Teamwork",
+        "Application Optimization",
+        "Algorithm Design"
+      ],
+      "link": "https://example.com",
+      "github": "https://github.com/Thiiv/LexiQuest"
+    },
+    {
+      "id": "project-3",
+      "title": "Battle of Balls v2",
+      "description": "As part of a course on optimizing Python applications, we revisited a first-year project, a 'Battle of Balls' game, to optimize it using tools studied in class.",
+      "image": "/Images/Bataille_de_boules.png",
+      "tags": ["Python"],
+      "slug": "bataille-de-boule-v2",
+      "fullDescription": "As part of a course on optimizing Python applications, we revisited a first-year project, a 'Battle of Balls' game, to optimize it using tools studied in class. We began by improving the code by removing unnecessary parts and grouping similar sections. We then analyzed CPU and memory usage to identify areas needing optimization, using tools like line_profiler and memory_profiler. We optimized the code by adopting more efficient algorithms and improving data structures. Finally, we compared the results before and after optimization to evaluate the impact of our changes. The project was completed in pairs, allowing us to work as a team and exchange ideas.",
+      "gallery": [
+        "/Images/Bataille_de_boules_jeu.png",
+        "/Images/Bataille_de_boules_options.png",
+        "/Images/Bataille_de_boules_classement.png"
+      ],
+      "tools": ["Python", "VS Code"],
+      "skillsApplied": [
+        "Teamwork",
+        "Application Optimization",
+        "Algorithm Design"
+      ],
+      "link": "https://example.com",
+      "github": "https://github.com/Thiiv/LexiQuest"
+    },
+    {
+      "id": "project-4",
+      "title": "Application Maintenance",
+      "description": "This project aimed to simulate an application maintenance scenario within a company.",
+      "image": null,
+      "tags": ["PHP", "MongoDB", "HTML/CSS/JS"],
+      "slug": "maintenance",
+      "fullDescription": "This project aimed to simulate an application maintenance scenario within a company, where we had to fix bugs reported by clients via anomaly reports. We first chose a project completed during our studies. We then implemented bugs into the project, including 5 major and 5 minor bugs. We exchanged the project with another group so they could fix the bugs we had introduced. Finally, we fixed the bugs that the previous group had introduced into our project. The project involved meetings with teams, acting both as project owners and developers. The project concluded with a presentation to a jury.",
+      "gallery": [
+        null,
+        null,
+        null
+      ],
+      "tools": ["Java", "HTML/CSS/JS", "C", "PHP Object", "SQL", "Python", "Highcharts", "Figma"],
+      "skillsApplied": [
+        "Backend Development",
+        "Algorithms",
+        "UI/UX Design",
+        "Project Management"
+      ],
+      "link": "https://example.com",
+      "github": "https://github.com/Thiiv/LexiQuest"
+    },
+    {
+      "id": "project-5",
+      "title": "LexiQuest",
+      "description": "Online word game using Word2Vec and Levenshtein algorithms.",
+      "image": "/Images/LexiQuest_jouer.png",
+      "tags": ["Java", "HTML/CSS/JS", "C", "PHP Object", "SQL", "Python"],
+      "slug": "lexiquest",
+      "fullDescription": "LexiQuest is an online game where players must create the best word chain between two given words. The project was developed using several programming languages, including Java, HTML/CSS/JS, C, PHP Object, SQL, and Python. The Word2Vec and Levenshtein algorithms were implemented to evaluate word chains. This project was completed by a team of 6, and we used project management tools like Jira to organize our work. We also used Highcharts for data visualization and Figma for UI/UX design.",
+      "gallery": [
+        "/Images/LexiQuest_accueil.png",
+        "/Images/LexiQuest_profil.png",
+        "/Images/LexiQuest_score.png"
+      ],
+      "tools": ["Java", "HTML/CSS/JS", "C", "PHP Object", "SQL", "Python", "Highcharts", "Figma"],
+      "skillsApplied": [
+        "Backend Development",
+        "Algorithm Design",
+        "UI/UX Design",
+        "Project Management"
+      ],
+      "link": "/lexiquest",
+      "github": "/lexiquest"
+    }
+  ],
+  "fr": [
+    {
+      "id": "project-1",
+      "title": "ChillZone",
+      "description": "Application tout-en-un pour les étudiants avec click-and-collect, réservation de salles, et navigation avec un plan 2D.",
+      "image": "/Images/ChillZone_desktop_connexion.png",
+      "tags": ["React Native", "ReactJS", "Atomic Design", "Jira", "Django"],
+      "slug": "chillzone",
+      "fullDescription": "ChillZone est une application développée pour les étudiants de l'Université Gustave Eiffel. Elle offre des fonctionnalités telles que le click-and-collect pour les repas, la réservation de salles, et la navigation avec un plan en 2D. Le projet a été réalisé en utilisant React Native et ReactJS avec l'architecture Atomic Design.",
+      "gallery": [
+        "/Images/ChillZone_accueil.png",
+        "/Images/ChillZone_compte.png",
+        "/Images/ChillZone_restaurant.png",
+        "/Images/ChillZone_connexion.png"
+      ],
+      "tools": ["React Native", "ReactJS", "Git", "Jira", "Figma", "Django"],
+      "skillsApplied": [
+        "Développement Frontend",
+        "Gestion de Projet",
+        "Design UI/UX",
+        "Travail en Équipe"
+      ],
+      "link": "https://example.com",
+      "github": "https://github.com/Thiiv/ChillZone"
+    },
+    {
+      "id": "project-2",
+      "title": "Huffman",
+      "description": "Le projet Huffman consistait à créer un programme capable de compresser une image en utilisant l'algorithme de Huffman couplé à l'image différentielle et de la décompresser.",
+      "image": null,
+      "tags": ["C"],
+      "slug": "huffman",
+      "fullDescription": "Le projet Huffman consistait à créer un programme capable de compresser une image en utilisant l'algorithme de Huffman couplé à l'image différentielle et de la décompresser. Une image différentielle est une image dont la valeur de chaque pixel est la différence entre la valeur de ce pixel et celle du pixel précédent. Cela permet d'améliorer l'efficacité de l'algorithme de Huffman. Le projet a été réalisé en C et a permis de mettre en pratique des concepts avancés de compression d'images.",
+      "gallery": [
+        null,
+        null,
+        null
+      ],
+      "tools": ["C", "VS Code"],
+      "skillsApplied": [
+        "Travail en équipe",
+        "Optimisation d'applications",
+        "Algorithmie"
+      ],
+      "link": "https://example.com",
+      "github": "https://github.com/Thiiv/LexiQuest"
+    },
+    {
+      "id": "project-3",
+      "title": "Bataille de Boules v2",
+      "description": "Dans le cadre d'un cours sur l'optimisation d'applications en Python, nous avons repris un projet réalisé en première année, un jeu de \"Bataille de boules\", pour l'optimiser à l'aide des outils étudiés en classe.",
+      "image": "/Images/Bataille_de_boules.png",
+      "tags": ["Python"],
+      "slug": "bataille-de-boule-v2",
+      "fullDescription": "Dans le cadre d'un cours sur l'optimisation d'applications en Python, nous avons repris un projet réalisé en première année, un jeu de \"Bataille de boules\", pour l'optimiser à l'aide des outils étudiés en classe. Nous avons commencé par améliorer le code en supprimant les parties superflues et en regroupant les sections similaires. Ensuite, nous avons analysé la consommation de processeur et de mémoire pour identifier les parties du code nécessitant une optimisation, en utilisant des outils comme line_profiler et memory_profiler. Nous avons ensuite optimisé le code en adoptant des algorithmes plus performants et en améliorant la structure des données. Après cela, nous avons comparé les résultats avant et après optimisation pour évaluer l'impact de nos modifications. Enfin, nous avons rédigé un rapport détaillant toutes les optimisations réalisées. Ce projet a été réalisé en binôme, ce qui nous a permis de travailler en équipe et d'échanger nos idées.",
+      "gallery": [
+        "/Images/Bataille_de_boules_jeu.png",
+        "/Images/Bataille_de_boules_options.png",
+        "/Images/Bataille_de_boules_classement.png"
+      ],
+      "tools": ["Python", "VS Code"],
+      "skillsApplied": [
+        "Travail en équipe",
+        "Optimisation d'applications",
+        "Algorithmie"
+      ],
+      "link": "https://example.com",
+      "github": "https://github.com/Thiiv/LexiQuest"
+    },
+    {
+      "id": "project-4",
+      "title": "Maintenance Applicative",
+      "description": "Il s'agit d'un projet visant à se mettre dans une situation de maintenance applicative au sein d'une entreprise.",
+      "image": null,
+      "tags": ["PHP", "MongoDB", "HTML/CSS/JS"],
+      "slug": "maintenance",
+      "fullDescription": "Il s'agit d'un projet visant à se mettre dans une situation de maintenance applicative au sein d'une entreprise, dans laquelle nous devions corriger des bugs rapportés par les clients via des fiches d'anomalie. Nous devions dans un premier temps choisir un projet réalisé au cours de nos années d'études. Ensuite, il nous fallait implémenter des bugs sur ce projet, dont 5 bugs majeurs et 5 bugs mineurs. Nous devions ensuite échanger le projet avec un autre groupe afin qu'ils puissent corriger les bugs que nous avions mis en place. Enfin, nous devions corriger les bugs que le groupe précédent avait mis en place sur notre projet. Dans ce projet, il y avait des réunions avec les équipes, à la fois dans le rôle de maître d'ouvrage et de maître d'œuvre. Le projet s'est conclu par une soutenance devant un jury.",
+      "gallery": [
+        null,
+        null,
+        null
+      ],
+      "tools": ["Java", "HTML/CSS/JS", "C", "PHP Object", "SQL", "Python", "Highcharts", "Figma"],
+      "skillsApplied": [
+        "Backend Development",
+        "Algorithms",
+        "UI/UX Design",
+        "Project Management"
+      ],
+      "link": "https://example.com",
+      "github": "https://github.com/Thiiv/LexiQuest"
+    },
+    {
+      "id": "project-5",
+      "title": "LexiQuest",
+      "description": "Jeu de mots en ligne utilisant les algorithmes Word2Vec et Levenshtein.",
+      "image": "/Images/LexiQuest_jouer.png",
+      "tags": ["Java", "HTML/CSS/JS", "C", "PHP Object", "SQL", "Python"],
+      "slug": "lexiquest",
+      "fullDescription": "LexiQuest est un jeu en ligne où les joueurs doivent créer la meilleure chaîne de mots entre deux mots donnés. Le projet a été développé en utilisant plusieurs langages de programmation, dont Java, HTML/CSS/JS, C, PHP Object, SQL et Python. Les algorithmes Word2Vec et Levenshtein ont été mis en œuvre pour évaluer les chaînes de mots. Ce projet a été réalisé en équipe de 6 personnes, et nous avons utilisé des outils de gestion de projet comme Jira pour organiser notre travail. Nous avons également utilisé Highcharts pour la visualisation des données et Figma pour le design UI/UX.",
+      "gallery": [
+        "/Images/LexiQuest_accueil.png",
+        "/Images/LexiQuest_profil.png",
+        "/Images/LexiQuest_score.png"
+      ],
+      "tools": ["Java", "HTML/CSS/JS", "C", "PHP Object", "SQL", "Python", "Highcharts", "Figma"],
+      "skillsApplied": [
+        "Développement Backend",
+        "Algorithmie",
+        "Design UI/UX",
+        "Gestion de Projet"
+      ],
+      "link": "/lexiquest",
+      "github": "/lexiquest"
+    }
+  ]
+}

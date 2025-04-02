@@ -1,0 +1,78 @@
+{
+  "en": {
+    "experience": [
+      {
+        "id": "exp-1",
+        "title": "Web Developer - Internship",
+        "organization": "Novus Systems",
+        "period": "June 2024 - July 2024",
+        "description": "Contributed to the redesign of the company's website and developed using Webflow.",
+        "icon": "Briefcase"
+      },
+      {
+        "id": "exp-2",
+        "title": "Network Engineer Assistant - Internship",
+        "organization": "DILA",
+        "period": "Mar. 2019",
+        "description": "Observed network interventions and learned about law applications via the Official Journal.",
+        "icon": "Network"
+      }
+    ],
+    "education": [
+      {
+        "id": "edu-1",
+        "title": "Bachelor in Computer Science - Application Development",
+        "organization": "Gustave Eiffel University",
+        "period": "2022 - 2025",
+        "description": "Computer science training with a specialization in application development.",
+        "icon": "GraduationCap"
+      },
+      {
+        "id": "edu-2",
+        "title": "High School Diploma in STI2D - Information Systems Specialty",
+        "organization": "René Cassin High School",
+        "period": "Sept. 2019 - July 2022",
+        "description": "Training in information systems and digital technology.",
+        "icon": "GraduationCap"
+      }
+    ]
+  },
+  "fr": {
+    "experience": [
+      {
+        "id": "exp-1",
+        "title": "Développeur Web - Stage",
+        "organization": "Novus Systems",
+        "period": "Juin 2024 - Juil. 2024",
+        "description": "Contribution à la refonte du site internet de la société et développement sur Webflow.",
+        "icon": "Briefcase"
+      },
+      {
+        "id": "exp-2",
+        "title": "Assistant Ingénieur Réseaux - Stage",
+        "organization": "Direction de l'information légale et administrative (DILA)",
+        "period": "Mar. 2019",
+        "description": "Observation des interventions réseau et apprentissage des applications de la loi via le Journal Officiel.",
+        "icon": "Network"
+      }
+    ],
+    "education": [
+      {
+        "id": "edu-1",
+        "title": "BUT Informatique - Parcours réalisation d'applications",
+        "organization": "Université Gustave Eiffel",
+        "period": "2022 - 2025",
+        "description": "Formation en informatique avec une spécialisation dans la réalisation d'applications.",
+        "icon": "GraduationCap"
+      },
+      {
+        "id": "edu-2",
+        "title": "Baccalauréat STI2D - Spécialité système d'information et numérique",
+        "organization": "Lycée René Cassin",
+        "period": "Sept. 2019 - Juil. 2022",
+        "description": "Formation en systèmes d'information et numérique.",
+        "icon": "GraduationCap"
+      }
+    ]
+  }
+}

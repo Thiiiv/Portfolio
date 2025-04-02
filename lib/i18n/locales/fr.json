@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "journey": "Parcours",
+    "contact": "Contact"
+  },
+  "button": {
+    "close": "Fermer",
+    "open": "Ouvrir"
+  },
+  "home": {
+    "title": "Étudiant en 3ème année de BUT Informatique",
+    "subtitle": "Mon ambition est de devenir ingénieur spécialisé en développement web et mobile en combinant innovation et expertise technique",
+    "viewProjects": "Voir les projets",
+    "getInTouch": "Me contacter",
+    "aboutTitle": "À propos de moi",
+    "aboutText": "Je suis un aspirant développeur d'applications, actuellement en troisième année de BUT Informatique, spécialisé dans la réalisation d'applications. Avec une expertise en développement logiciel et web, je maîtrise des langages tels que Java, Python, React Native, et C, ainsi que des outils comme Visual Studio Code, Git, et Figma. Mon expérience inclut des projets universitaires innovants comme ChillZone et LexiQuest, où j'ai travaillé en équipe pour créer des applications interactives et des jeux en ligne. Mon approche allie rigueur technique et créativité, visant à offrir des solutions numériques performantes et intuitives.",
+    "myJourney": "Mon parcours"
+  },
+  "projects": {
+    "title": "Mes projets",
+    "subtitle": "Explorez mes derniers travaux et projets. Chaque projet représente un défi unique et une solution.",
+    "notFound": "Projet non trouvé",
+    "notFoundText": "Le projet que vous recherchez n'existe pas ou a été supprimé.",
+    "backToProjects": "Retour aux projets",
+    "overview": "Aperçu",
+    "gallery": "Galerie",
+    "tools": "Outils & technologies",
+    "skills": "Compétences appliquées",
+    "visitProject": "Visiter le projet",
+    "viewSourceCode": "Voir le code source",
+    "noImage": "Aucune image disponible"
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "subtitle": "Voici les compétences que j'ai développées tout au long de ma carrière. Chaque compétence est liée aux projets où je les ai appliquées.",
+    "proficiency": "Maîtrise",
+    "relatedProjects": "Projets Associés "
+  },
+  "journey": {
+    "title": "Mon Parcours",
+    "subtitle": "Explorez mon parcours éducatif et mes expériences professionnelles qui ont façonné ma carrière.",
+    "experience": "Expérience Professionnelle",
+    "education": "Formation"
+  },
+  "contact": {
+    "title": "Me contacter",
+    "subtitle": "Vous avez un projet en tête ou vous souhaitez collaborer ? N'hésitez pas à me contacter !",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "Votre email",
+      "subjectPlaceholder": "Sujet du message",
+      "messagePlaceholder": "Écrivez votre message ici...",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours..."
+    },
+    "success": {
+      "title": "Message envoyé !",
+      "description": "Merci de m'avoir contacté. Je vous répondrai dès que possible.",
+      "sendAnother": "Envoyer un Autre Message"
+    },
+    "info": {
+      "title": "Informations de contact",
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "followMe": "Me suivre"
+    }
+  },
+  "footer": {
+    "description": "Un site portfolio moderne présentant mon travail, mes compétences et mon parcours. Construit avec Next.js, Tailwind CSS et Framer Motion pour des animations et transitions fluides.",
+    "navigation": "Navigation",
+    "connect": "Connexion",
+    "rights": "Tous droits réservés.",
+    "builtWith": "Construit avec:"
+  },
+  "theme": {
+    "appearance": "Apparence",
+    "colorThemes": "Thèmes de couleur",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "purple": "Violet",
+    "blue": "Bleu",
+    "green": "Vert",
+    "orange": "Orange"
+  },
+  "backToTop": "Retour en haut"
+}

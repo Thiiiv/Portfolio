@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "journey": "Journey",
+    "contact": "Contact"
+  },
+  "button": {
+    "close": "Close",
+    "open": "Open"
+  },
+  "home": {
+    "title": "3rd Year Computer Science Student",
+    "subtitle": "My ambition is to become an engineer specialized in web and mobile development by combining innovation and technical expertise",
+    "viewProjects": "View Projects",
+    "getInTouch": "Get in Touch",
+    "aboutTitle": "About Me",
+    "aboutText": "I am an aspiring application developer, currently in my third year of a Bachelor's degree in Computer Science, specializing in application development. With expertise in software and web development, I am proficient in languages such as Java, Python, React Native, and C, as well as tools like Visual Studio Code, Git, and Figma. My experience includes innovative university projects such as ChillZone and LexiQuest, where I worked in teams to create interactive applications and online games. My approach combines technical rigor and creativity, aiming to deliver high-performance and intuitive digital solutions.",
+    "myJourney": "My Journey"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Explore my latest works and projects. Each project represents a unique challenge and a solution.",
+    "notFound": "Project Not Found",
+    "notFoundText": "The project you are looking for does not exist or has been deleted.",
+    "backToProjects": "Back to Projects",
+    "overview": "Overview",
+    "gallery": "Gallery",
+    "tools": "Tools & Technologies",
+    "skills": "Skills Applied",
+    "visitProject": "Visit Project",
+    "viewSourceCode": "View Source Code",
+    "noImage": "No image available"
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "Here are the skills I have developed throughout my career. Each skill is linked to the projects where I applied them.",
+    "proficiency": "Proficiency",
+    "relatedProjects": "Related Projects "
+  },
+  "journey": {
+    "title": "My Journey",
+    "subtitle": "Explore my educational journey and professional experiences that have shaped my career.",
+    "experience": "Professional Experience",
+    "education": "Education"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Have a project in mind or want to collaborate? Feel free to contact me!",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email",
+      "subjectPlaceholder": "Subject of the message",
+      "messagePlaceholder": "Write your message here...",
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "success": {
+      "title": "Message Sent!",
+      "description": "Thank you for contacting me. I will respond as soon as possible.",
+      "sendAnother": "Send Another Message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "followMe": "Follow Me"
+    }
+  },
+  "footer": {
+    "description": "A modern portfolio website showcasing my work, skills, and journey. Built with Next.js, Tailwind CSS, and Framer Motion for smooth animations and transitions.",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "rights": "All rights reserved.",
+    "builtWith": "Built with:"
+  },
+  "theme": {
+    "appearance": "Appearance",
+    "colorThemes": "Color Themes",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "purple": "Purple",
+    "blue": "Blue",
+    "green": "Green",
+    "orange": "Orange"
+  },
+  "backToTop": "Back to Top"
+}

@@ -1,0 +1,54 @@
+{
+  "en": [
+    {
+      "id": "skill-1",
+      "name": "Adapting Applications Across Platforms",
+      "description": "Building responsive and interactive user interfaces with modern frameworks and libraries, as demonstrated in the ChillZone project, which utilized React Native and ReactJS to create a seamless user experience across different platforms.",
+      "projects": ["chillzone"],
+      "icon": "Code",
+      "level": null
+    },
+    {
+      "id": "skill-2",
+      "name": "Analyzing and Optimizing Applications",
+      "description": "Optimizing applications by analyzing performance and improving code, as seen in the Huffman and Battle of Balls v2 projects, where application efficiency and performance were enhanced.",
+      "projects": ["huffman", "bataille-de-boule-v2"],
+      "icon": "Palette",
+      "level": null
+    },
+    {
+      "id": "skill-3",
+      "name": "Managing an IT Team",
+      "description": "Managing teams and coordinating development efforts, as demonstrated in the Application Maintenance project, where collaboration and task management were essential for fixing bugs and improving the application.",
+      "projects": ["maintenance"],
+      "icon": "Server",
+      "level": null
+    }
+  ],
+  "fr": [
+    {
+      "id": "skill-1",
+      "name": "Adapter des applications sur un ensemble de supports",
+      "description": "Construction d'interfaces utilisateur réactives et interactives avec des frameworks et bibliothèques modernes, comme démontré dans le projet ChillZone, qui a utilisé React Native et ReactJS pour créer une expérience utilisateur fluide.",
+      "projects": ["chillzone"],
+      "icon": "Code",
+      "level": null
+    },
+    {
+      "id": "skill-2",
+      "name": "Analyser et optimiser des applications",
+      "description": "Optimisation des applications en analysant les performances et en améliorant le code, comme dans les projets Huffman et Bataille de Boules v2, où l'efficacité et la performance des applications ont été améliorées.",
+      "projects": ["huffman", "bataille-de-boule-v2"],
+      "icon": "Palette",
+      "level": null
+    },
+    {
+      "id": "skill-3",
+      "name": "Manager une équipe informatique",
+      "description": "Gestion d'équipes et coordination des efforts de développement, comme dans le projet Maintenance Applicative, où la collaboration et la gestion des tâches étaient essentielles pour corriger les bugs et améliorer l'application.",
+      "projects": ["maintenance"],
+      "icon": "Server",
+      "level": null
+    }
+  ]
+}
