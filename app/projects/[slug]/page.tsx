@@ -135,16 +135,20 @@ export default function ProjectDetail() {
             </ul>
 
             <div className="flex flex-col gap-3">
-              <Button asChild>
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  {t("projects.visitProject")}
-                </a>
-              </Button>
-              <Button variant="outline" asChild>
+              {project.link !== null && 
+                <Button asChild>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    {t("projects.visitProject")}
+                  </a>
+                </Button>
+              }
+              {project.github !== null &&
+                <Button variant="outline" asChild>
                 <a href={project.github} target="_blank" rel="noopener noreferrer">
                   {t("projects.viewSourceCode")}
                 </a>
               </Button>
+              }
             </div>
           </div>
         </motion.div>

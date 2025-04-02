@@ -21,8 +21,8 @@
         "UI/UX Design",
         "Teamwork"
       ],
-      "link": "https://example.com",
-      "github": "https://github.com/Thiiv/ChillZone"
+      "link": null,
+      "github": "https://github.com/FC-Zen/ChillZone"
     },
     {
       "id": "project-2",
@@ -43,8 +43,8 @@
         "Application Optimization",
         "Algorithm Design"
       ],
-      "link": "https://example.com",
-      "github": "https://github.com/Thiiv/LexiQuest"
+      "link": null,
+      "github": null
     },
     {
       "id": "project-3",
@@ -65,8 +65,8 @@
         "Application Optimization",
         "Algorithm Design"
       ],
-      "link": "https://example.com",
-      "github": "https://github.com/Thiiv/LexiQuest"
+      "link": null,
+      "github": "https://github.com/Thiiiv/BUT-1-SAE-Python"
     },
     {
       "id": "project-4",
@@ -88,8 +88,8 @@
         "UI/UX Design",
         "Project Management"
       ],
-      "link": "https://example.com",
-      "github": "https://github.com/Thiiv/LexiQuest"
+      "link": null,
+      "github": null
     },
     {
       "id": "project-5",
@@ -111,8 +111,8 @@
         "UI/UX Design",
         "Project Management"
       ],
-      "link": "/lexiquest",
-      "github": "/lexiquest"
+      "link": null,
+      "github": "https://github.com/but2-sae-2023/LexiQuest"
     }
   ],
   "fr": [
@@ -137,8 +137,8 @@
         "Design UI/UX",
         "Travail en Équipe"
       ],
-      "link": "https://example.com",
-      "github": "https://github.com/Thiiv/ChillZone"
+      "link": null,
+      "github": "https://github.com/FC-Zen/ChillZone"
     },
     {
       "id": "project-2",
@@ -159,8 +159,8 @@
         "Optimisation d'applications",
         "Algorithmie"
       ],
-      "link": "https://example.com",
-      "github": "https://github.com/Thiiv/LexiQuest"
+      "link": null,
+      "github": null
     },
     {
       "id": "project-3",
@@ -181,8 +181,8 @@
         "Optimisation d'applications",
         "Algorithmie"
       ],
-      "link": "https://example.com",
-      "github": "https://github.com/Thiiv/LexiQuest"
+      "link": null,
+      "github": "https://github.com/Thiiiv/BUT-1-SAE-Python"
     },
     {
       "id": "project-4",
@@ -204,8 +204,8 @@
         "UI/UX Design",
         "Project Management"
       ],
-      "link": "https://example.com",
-      "github": "https://github.com/Thiiv/LexiQuest"
+      "link": null,
+      "github": null
     },
     {
       "id": "project-5",
@@ -227,8 +227,8 @@
         "Design UI/UX",
         "Gestion de Projet"
       ],
-      "link": "/lexiquest",
-      "github": "/lexiquest"
+      "link": null,
+      "github": "https://github.com/but2-sae-2023/LexiQuest"
     }
   ]
 }
